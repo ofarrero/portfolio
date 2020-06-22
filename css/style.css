@@ -46,6 +46,19 @@
     font-family: 'Sriracha', cursive;
   }
 
+  figcaption{
+    font-size: .8em;
+    font-style: italic;
+    font-weight: lighter;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+
   .content-wrap{
     max-width: 800px;
     width: 85%;
@@ -67,7 +80,7 @@
       padding: 1em 0;
     }
 
-  .divider > section:last-of-type{
+  .divider > section:last-of-type {
         overflow: hidden;
         border-bottom: none;
         padding: 1em 0;
@@ -84,7 +97,6 @@
   .projects {
     background: #BDCBDB;
   }
-
 
   .project-item h3{
     margin-top: 0;
@@ -121,6 +133,101 @@
     transform: scale(1.05);
     opacity: .8;
   }
+
+  /* Articles
+  -------------------*/
+  blockquote {
+    display: block;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #508484;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+ }
+
+  blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em 'PT Sans', sans-serif;
+    color: #508484;
+    text-align: center;
+ }
+
+ blockquote:after {
+    content: "\2013 \2003" attr(cite);
+    display: block;
+    text-align: right;
+    font-size: 0.875em;
+    color: #508484;
+ }
+
+ .quote-container {
+   background: #fff;
+   width: 100%;
+   max-width: 480px;
+   min-width: 320px;
+   margin: .5em auto 0;
+   padding: 1.5em;
+ }
+  .article-content{
+    overflow: hidden;
+    border-bottom: none;
+    padding: 2em 1em;
+  }
+
+  .outer{
+    display: block;
+    text-align: center;
+
+  }
+
+ .article-img{
+   max-width: 370px;
+   min-height: 200px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: var(--bs);
+ }
+
+
+  #article footer{
+    padding: 0;
+  }
+
+  #article .content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+  }
+  .next{
+    text-align: right;
+  }
+  .next a{
+    margin: .5em 2em;
+    display: inline-block;
+  }
+
+  .next .btn{
+    background: #D9E1E2;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .next .btn:hover{
+      background: rgba(217,225,226,70%);
+  }
+
+
 
 /* Contact info
 -------------------*/
@@ -191,3 +298,5 @@
     }
 
   }
+
+  @import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400,700);
